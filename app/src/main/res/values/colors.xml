@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_tittle">#62f58b</color>
+    <color name="back_regist">#f4f4f4</color>
+    <color name="pad_regist">#c8c7cc</color>
+    <color name="c_button">#cccccc</color>
+    <color name="light_gray">#dcdbdb</color>
+    <color name="user_border">#caf8d7</color>
+</resources>
