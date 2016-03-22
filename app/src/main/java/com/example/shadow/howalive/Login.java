@@ -23,6 +23,7 @@ public class Login  extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
+        MyApp.getInstance().addActivity(this);
         init();
     }
 
@@ -40,7 +41,8 @@ public class Login  extends Activity {
         btn_log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Login.this, PasswordActivity.class);
+                startActivity(intent);
             }
         });
     }

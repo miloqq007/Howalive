@@ -32,10 +32,11 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
         android:background="@android:color/white">
         <TextView
             android:id="@+id/about_name_textview"
@@ -58,11 +59,12 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
         android:background="@android:color/white">
         <TextView
             android:id="@+id/about_sex_textview"
@@ -96,11 +98,12 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
         android:background="@android:color/white">
         <TextView
             android:id="@+id/about_city_textview"
@@ -114,7 +117,7 @@
             android:id="@+id/about_city_button"
             android:layout_width="fill_parent"
             android:layout_height="20dp"
-            android:gravity="left"
+            android:gravity="left|center_horizontal"
             android:background="@android:color/white"
             android:text="上海"
             android:textColor="@color/c_button"

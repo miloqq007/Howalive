@@ -6,4 +6,18 @@
     <color name="c_button">#cccccc</color>
     <color name="light_gray">#dcdbdb</color>
     <color name="user_border">#caf8d7</color>
+    <color name="personal_head_bg" >#454c49</color>
+    <color name="text_gray">#dadadb</color>
+    <color name="personal_btn_border_green">#62f58b</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="theme_background">#f4f4f4</color>
+    <color name="list_line">#cdcdcd</color>
+    <color name="list_context_text">#999999</color>
+    <color name="theme_green">#62f58b</color>
+    <color name="gray">#9f9f9f</color>
+    <color name="hint_text">#cccccc</color>
+    <color name="plant_list_kind_box">#d0bee1</color>
+    <color name="water_button">#6ff695</color>
+    <color name="plant_detial_record_text">#464646</color>
 </resources>

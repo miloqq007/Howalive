@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_height">
+    <TextView
+        android:id="@+id/listhead_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/list_textsize"
+        android:textColor="@color/black"
+        android:text="头像"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/list_textpadding"/>
+    <com.example.shadow.howalive.CircleImageView
+        android:id="@+id/listhead_image_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/listhead_image_arrow"
+        android:padding="@dimen/list_imagepadding"
+
+        app:civ_border_color="@color/personal_head_bg" />
+    <ImageView
+        android:id="@+id/listhead_image_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/detial_arrow"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/list_arrowpadding"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

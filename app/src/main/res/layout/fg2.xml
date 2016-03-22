@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/theme_green"
+        android:text="我的植物"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center">
+    </TextView>
+
+    <com.example.shadow.howalive.PlantListButton
+        android:id="@+id/myplant1_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"
+        />
+    <com.example.shadow.howalive.PlantListButton
+        android:id="@+id/myplant2_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"
+        />
+    <Button
+        android:id="@+id/add_plant"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/plant_list_height"
+        android:background="#ffffff"
+        android:textSize="19sp"
+        android:textColor="@color/list_context_text"
+        android:text="添加植物"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"
+        />
+
+
+</LinearLayout>

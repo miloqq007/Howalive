@@ -3,4 +3,17 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="block_home">首页</string>
+    <string name="block_plant">植物</string>
+    <string name="block_action">动作</string>
+    <string name="block_personal">个人</string>
+    <string name="personal_ueser_name">给我来个白皮点心</string>
+    <string name="personal_city">上海</string>
+    <string name="personal_days">养植物32天</string>
+    <string name="personal_edit_data_btn">编辑资料</string>
+    <string name="personal_set_btn">设置</string>
+    <string name="head_portrait">头像</string>
+    <string name="bring_up_year">养殖年限</string>
+    <string name="exam_date">2016-1-27</string>
+    <string name="save">保存</string>
 </resources>

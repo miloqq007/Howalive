@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="@dimen/list_height">
+
+    <ImageView
+        android:id="@+id/plant_detial_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plant_detial_home"/>
+    <TextView
+        android:id="@+id/plant_detial_record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/plant_detial_record_text"
+        />
+
+</LinearLayout>

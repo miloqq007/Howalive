@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:id="@+id/home_page_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/home_page_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_page_icon"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/home_page_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_tittle"
+                    android:text="@string/block_home"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/plant_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/plant_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plant_icon2"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/plant_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_tittle"
+                    android:text="@string/block_plant"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/action_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/action_icon"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_tittle"
+                    android:text="@string/block_action"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/personal_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/personal_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/personal_icon2"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/personal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_tittle"
+                    android:text="@string/block_personal"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
