@@ -1,8 +1,10 @@
 package com.example.shadow.howalive;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,7 +33,10 @@ public class PlantListButton extends RelativeLayout {
         this.textviewname = (TextView)findViewById(R.id.plant1_name);
         this.textviewkind = (TextView)findViewById(R.id.plant1_kind);
         this.textviewday = (TextView)findViewById(R.id.plant1_day);
-
+        this.setBackgroundColor(Color.WHITE);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        layoutParams.setMargins(0,0,0,10);
+        this.setLayoutParams(layoutParams);
         this.setClickable(true);
         this.setFocusable(true);
     }

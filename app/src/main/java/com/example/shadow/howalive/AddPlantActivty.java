@@ -1,24 +1,30 @@
 package com.example.shadow.howalive;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.util.Calendar;
 
 /**
  * Created by Shadow on 2016/3/13.
@@ -62,8 +68,10 @@ public class AddPlantActivty extends Activity {
         btn_add_time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddPlantActivty.this, DataSelectActivity.class);
-                startActivityForResult(intent,2);
+//                Intent intent = new Intent(AddPlantActivty.this, DataSelectActivity.class);
+//                startActivityForResult(intent,2);
+                DatePickerF DPD = new DatePickerF();
+                DPD.show(getFragmentManager(), "datePicker");
             }
         });
         add_name.addTextChangedListener(new TextWatcher() {
@@ -163,6 +171,7 @@ public class AddPlantActivty extends Activity {
                 //获取b传送的数据
                 String plant = bundle.getString("plant");
                 btn_add_plant.setText(plant);
+                btn_add_plant.setTextColor(Color.BLACK);
             }
         }
         else
@@ -198,4 +207,43 @@ public class AddPlantActivty extends Activity {
         return data;
 
     }
+
+    class DatePickerF extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+        int _year = 1970;
+        int _month = 0;
+        int _day = 0;
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            final Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
+            return new DatePickerDialog(getActivity(),this,year,month,day);
+        }
+        @Override
+        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+            _year = year;
+            _month = monthOfYear + 1;
+            _day = dayOfMonth;
+            btn_add_time.setText(""+_year+"年"+_month+"月"+_day+"日");
+            btn_add_time.setTextColor(Color.BLACK);
+//        Log.i(Constant.LOG_TAG, "year="+year+",monthOfYear="+monthOfYear+",dayOfMonth="+dayOfMonth);
+        }
+        public String getValue()
+        {
+            return ""+_year+"年"+_month+"月"+_day+"日";
+        }
+
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            //这里写你要在用户按下返回键同时执行的动作
+            moveTaskToBack(false);            //核心代码：屏蔽返回行为
+            finish();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
 }

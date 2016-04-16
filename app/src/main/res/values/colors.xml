@@ -20,4 +20,5 @@
     <color name="plant_list_kind_box">#d0bee1</color>
     <color name="water_button">#6ff695</color>
     <color name="plant_detial_record_text">#464646</color>
+    <color name="warning_red">#e54949</color>
 </resources>

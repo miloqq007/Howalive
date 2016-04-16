@@ -50,8 +50,7 @@
         <activity android:name=".EditPlantInfoActivity" android:theme="@style/TitleTheme"/>
         <activity android:name=".ModifyPlantNameActivity" android:theme="@style/TitleTheme"/>
         <activity android:name=".HotKindActivity" android:theme="@style/TitleTheme"/>
-        <activity android:name=".DataSelectActivity"
-            android:theme="@style/TitleTheme"></activity>
+        <activity android:name=".HomePlantDetialActivity" android:theme="@style/TitleTheme"/>
     </application>
 
 </manifest>

@@ -17,7 +17,7 @@ public class Jdbc {
     private final String USERNAME = "root";
     private final String PASSWORD = "FzYakN6zlPDA";
     private final String DRIVER = "com.mysql.jdbc.Driver";
-    private final String URL = "jdbc:mysql://139.129.20.252:8080/ep";
+    private final String URL = "jdbc:mysql://139.129.20.252:3306/ep";
     private Connection mConnection;
     private PreparedStatement mPreparedStatement;
     private ResultSet mResultSet;

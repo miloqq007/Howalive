@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/theme_background">
+    android:background="@color/back_regist">
 
 
     <TextView
@@ -16,26 +16,31 @@
         android:gravity="center">
     </TextView>
 
-    <com.example.shadow.howalive.PlantListButton
-        android:id="@+id/myplant1_list"
-        android:layout_width="fill_parent"
+    <!--<com.example.shadow.howalive.PlantListButton-->
+        <!--android:id="@+id/myplant1_list"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"/>-->
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/list_line"-->
+        <!--/>-->
+    <!--<com.example.shadow.howalive.PlantListButton-->
+        <!--android:id="@+id/myplant2_list"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"/>-->
+    <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/list_line"-->
+        <!--/>-->
+    <LinearLayout
+        android:id="@+id/fg2_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"/>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@color/list_line"
-        />
-    <com.example.shadow.howalive.PlantListButton
-        android:id="@+id/myplant2_list"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"/>
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="@color/list_line"
-        />
+        android:orientation="vertical"></LinearLayout>
     <Button
         android:id="@+id/add_plant"
         android:layout_width="fill_parent"

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -187,6 +188,17 @@ public class AboutAdminActivity extends Activity {
         inStream.close();
         return data;
 
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            //这里写你要在用户按下返回键同时执行的动作
+            moveTaskToBack(false);            //核心代码：屏蔽返回行为
+            finish();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }
